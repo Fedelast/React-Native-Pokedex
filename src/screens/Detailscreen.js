@@ -1,8 +1,7 @@
 import React from 'react'
-import { ActivityIndicator, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { ScrollView } from 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/Ionicons'
+import { ActivityIndicator, Image, StyleSheet, Text, TouchableOpacity, View ,ScrollView} from 'react-native'
 import { usePokemonInfo } from '../hooks/usePokemonInfo';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export const Detailscreen = ({navigation,route}) => {
 
@@ -10,6 +9,8 @@ export const Detailscreen = ({navigation,route}) => {
     const {pokedata,loading} = usePokemonInfo(pokemon.id)
 
     return (
+
+        
         <View style={{flex:1}}>
 
                 <Image
